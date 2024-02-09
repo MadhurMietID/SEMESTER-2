@@ -1,4 +1,4 @@
-/*The ptogram works, even when we replace <> with ""  in # include*/
+/*This program is working, even when we replace <> with ""  in # include*/
 #include"stdio.h"
 int main()
 {
