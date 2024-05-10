@@ -146,3 +146,36 @@ In the `main` function:
 
 This text-based representation helps in visualizing the structure of the binary tree and understanding the relationships between its nodes.
 */
+/*
+
+||
+struct node {
+    int data;
+    struct node* right;
+    struct node* left;
+};
+||
+\\
+
+1. **struct node**: This declares a new structure named `node`. `struct` keyword is used to define a structure in C. This structure is a blueprint for a node in a binary tree.
+
+2. **int data**: This line declares a member variable `data` inside the `struct node`. It represents the data contained in a node of the binary tree. In this case, it's an integer value.
+
+3. **struct node* right**: This line declares a pointer to a `struct node` named `right`. It represents the right child of the current node in a binary tree. Since it's a pointer, it can point to another node or be `NULL` if there's no right child.
+
+4. **struct node* left**: Similar to the `right` pointer, this line declares a pointer to a `struct node` named `left`. It represents the left child of the current node in a binary tree. Like `right`, it can point to another node or be `NULL` if there's no left child.
+
+So, in summary:
+- Each node in the binary tree (`struct node`) contains an integer value (`data`) and two pointers (`left` and `right`) pointing to its left and right children, respectively.
+\\
+||
+struct node* createnode(int data) {
+    struct node* newnode = (struct node*)malloc(sizeof(struct node));
+    newnode->data = data;
+    newnode->left = newnode->right = NULL;
+    return newnode;
+||
+\\
+
+\\
+*/
