@@ -1,3 +1,4 @@
+/*The code provided is an implementation of a binary tree in C. It creates a binary tree with five nodes and demonstrates how to use basic operations like creating nodes and linking them together to form a binary tree structure. */
 #include <stdio.h>
 #include <stdlib.h>
 
